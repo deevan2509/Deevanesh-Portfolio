@@ -116,10 +116,16 @@ export const experience = [
 
 export const education = [
   {
+    degree: 'Master of Science in Computer Systems Engineering (Part-Time)',
+    institution: 'Universiti Teknologi Malaysia (UTM)',
+    location: 'Johor, Malaysia',
+    period: 'Sept 2026 – Present',
+  },
+  {
     degree: 'Bachelor of Computer Science (Hons) in Software Engineering',
     institution: 'INTI International University',
     location: 'Negeri Sembilan, Malaysia',
-    period: 'Jan 2022 – Present',
+    period: 'Jan 2022 – Jan 2026',
   },
   {
     degree: 'Foundation in Information Technology',

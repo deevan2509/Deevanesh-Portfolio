@@ -1,0 +1,96 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import { profile, references } from '../data/portfolio';
+---
+
+<SectionHeading
+  id="contact"
+  title="Contact"
+  subtitle="Open to software engineering, web development, and QA automation opportunities."
+>
+  <div class="grid gap-8 lg:grid-cols-2">
+    <div class="rounded-2xl border border-beige bg-white p-8 shadow-sm">
+      <h3 class="text-lg font-semibold text-charcoal">Get in touch</h3>
+      <p class="mt-3 text-muted">
+        Feel free to reach out for job opportunities, collaborations, or professional inquiries.
+      </p>
+
+      <ul class="mt-6 space-y-4">
+        <li>
+          <a
+            href={`mailto:${profile.email}`}
+            class="group flex items-center gap-3 text-charcoal transition-colors hover:text-accent"
+          >
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-beige text-accent">
+              @
+            </span>
+            <span>
+              <span class="block text-xs font-medium uppercase tracking-wider text-muted">Email</span>
+              {profile.email}
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href={`tel:${profile.phone.replace(/\s/g, '')}`}
+            class="group flex items-center gap-3 text-charcoal transition-colors hover:text-accent"
+          >
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-beige text-accent">
+              #
+            </span>
+            <span>
+              <span class="block text-xs font-medium uppercase tracking-wider text-muted">Phone</span>
+              {profile.phone}
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href={profile.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex items-center gap-3 text-charcoal transition-colors hover:text-accent"
+          >
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-beige text-accent">
+              in
+            </span>
+            <span>
+              <span class="block text-xs font-medium uppercase tracking-wider text-muted">LinkedIn</span>
+              deevanesh-nagarajan
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <a
+        href={`mailto:${profile.email}?subject=Portfolio%20Inquiry`}
+        class="mt-8 inline-flex rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent-dark"
+      >
+        Send an Email
+      </a>
+    </div>
+
+    <div>
+      <h3 class="mb-5 text-sm font-semibold uppercase tracking-wider text-accent">References</h3>
+      <div class="space-y-4">
+        {
+          references.map((ref) => (
+            <article class="rounded-2xl border border-beige bg-white p-6 shadow-sm">
+              <h4 class="font-semibold text-charcoal">{ref.name}</h4>
+              <p class="text-sm text-muted">{ref.title}</p>
+              <p class="text-sm text-muted">{ref.organization}</p>
+              <div class="mt-3 space-y-1 text-sm">
+                <a href={`mailto:${ref.email}`} class="block text-accent hover:underline">
+                  {ref.email}
+                </a>
+                <a href={`tel:${ref.phone.replace(/\s/g, '')}`} class="block text-muted hover:text-accent">
+                  {ref.phone}
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</SectionHeading>

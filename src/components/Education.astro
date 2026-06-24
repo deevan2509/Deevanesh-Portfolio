@@ -1,0 +1,61 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import { education, certifications, languages } from '../data/portfolio';
+---
+
+<SectionHeading
+  id="education"
+  title="Education & Certifications"
+  subtitle="Academic background, professional certifications, and language proficiency."
+>
+  <div class="grid gap-10 lg:grid-cols-2">
+    <div>
+      <h3 class="mb-5 text-sm font-semibold uppercase tracking-wider text-accent">Education</h3>
+      <div class="space-y-5">
+        {
+          education.map((entry) => (
+            <article class="rounded-2xl border border-beige bg-white p-5 shadow-sm">
+              <h4 class="font-semibold text-charcoal">{entry.degree}</h4>
+              <p class="mt-1 text-sm font-medium text-muted">{entry.institution}</p>
+              <p class="text-sm text-muted">
+                {entry.location} · {entry.period}
+              </p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="space-y-10">
+      <div>
+        <h3 class="mb-5 text-sm font-semibold uppercase tracking-wider text-accent">
+          Certifications
+        </h3>
+        <ul class="space-y-3">
+          {
+            certifications.map((cert) => (
+              <li class="flex gap-3 rounded-xl border border-beige bg-white px-4 py-3 text-sm text-charcoal shadow-sm">
+                <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-accent" aria-hidden="true" />
+                {cert}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-5 text-sm font-semibold uppercase tracking-wider text-accent">Languages</h3>
+        <div class="flex flex-wrap gap-3">
+          {
+            languages.map((lang) => (
+              <div class="rounded-xl border border-beige bg-white px-4 py-3 shadow-sm">
+                <p class="font-medium text-charcoal">{lang.name}</p>
+                <p class="text-sm text-muted">{lang.level}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</SectionHeading>

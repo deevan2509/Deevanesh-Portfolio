@@ -1,0 +1,14 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import { summary } from '../data/portfolio';
+---
+
+<SectionHeading
+  id="about"
+  title="About Me"
+  subtitle="A brief overview of my background and career goals."
+>
+  <div class="max-w-3xl">
+    <p class="text-lg leading-relaxed text-muted">{summary}</p>
+  </div>
+</SectionHeading>

@@ -1,0 +1,62 @@
+---
+import { profile } from '../data/portfolio';
+---
+
+<section class="relative overflow-hidden bg-beige/40">
+  <div class="mx-auto grid max-w-5xl items-center gap-12 px-6 py-20 md:grid-cols-[280px_1fr] md:py-28">
+    <div class="mx-auto w-full max-w-[280px] md:mx-0">
+      <div class="overflow-hidden rounded-2xl border border-beige bg-white p-2 shadow-lg shadow-charcoal/5">
+        <img
+          src={profile.photo}
+          alt={profile.photoAlt}
+          width="280"
+          height="350"
+          class="aspect-[4/5] w-full rounded-xl object-cover object-top"
+          loading="eager"
+        />
+      </div>
+    </div>
+
+    <div class="text-center md:text-left">
+      <p class="mb-3 text-sm font-medium uppercase tracking-widest text-accent">
+        Portfolio
+      </p>
+      <h1 class="text-4xl font-bold tracking-tight text-charcoal md:text-5xl lg:text-6xl">
+        {profile.name}
+      </h1>
+      <p class="mt-4 text-xl font-medium text-charcoal/90 md:text-2xl">
+        {profile.title}
+      </p>
+      <p class="mt-2 flex items-center justify-center gap-2 text-muted md:justify-start">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        {profile.location}
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3 md:justify-start">
+        <a
+          href={profile.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent-dark"
+        >
+          LinkedIn
+        </a>
+        <a
+          href={`mailto:${profile.email}`}
+          class="inline-flex items-center gap-2 rounded-full border border-charcoal/15 bg-white px-5 py-2.5 text-sm font-medium text-charcoal transition-colors hover:border-accent hover:text-accent"
+        >
+          Email Me
+        </a>
+        <a
+          href="#experience"
+          class="inline-flex items-center gap-2 rounded-full border border-charcoal/15 bg-white px-5 py-2.5 text-sm font-medium text-charcoal transition-colors hover:border-accent hover:text-accent"
+        >
+          View Experience
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

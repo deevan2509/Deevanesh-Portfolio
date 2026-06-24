@@ -1,0 +1,38 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import { experience } from '../data/portfolio';
+---
+
+<SectionHeading
+  id="experience"
+  title="Experience"
+  subtitle="Professional roles across software development, education, and IT support."
+>
+  <div class="relative space-y-8 before:absolute before:bottom-0 before:left-[7px] before:top-2 before:w-px before:bg-beige md:before:left-[11px]">
+    {
+      experience.map((job) => (
+        <article class="relative pl-8 md:pl-12">
+          <div class="absolute left-0 top-2 h-4 w-4 rounded-full border-2 border-accent bg-cream md:left-1" />
+          <div class="rounded-2xl border border-beige bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-charcoal">{job.title}</h3>
+                <p class="mt-1 font-medium text-accent">{job.company}</p>
+                <p class="text-sm text-muted">{job.location}</p>
+              </div>
+              <p class="mt-2 shrink-0 text-sm font-medium text-muted sm:mt-0">{job.period}</p>
+            </div>
+            <ul class="mt-5 space-y-2">
+              {job.highlights.map((item) => (
+                <li class="flex gap-3 text-muted">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true" />
+                  <span class="leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</SectionHeading>

@@ -166,6 +166,46 @@ export const projects = [
       'Evaluated model performance using dataset validation and accuracy metrics.',
     ],
   },
+  {
+    name: 'Klinik Rakyat Webpage',
+    technologies: ['Vue.js', 'Java', 'PHP', 'JavaScript', 'MySQL'],
+    highlights: [
+      'Built a responsive public-facing website for a community healthcare clinic.',
+      'Developed dynamic front-end views with Vue.js and integrated PHP/Java backend services.',
+      'Implemented clinic information pages, service listings, and contact features for patients.',
+      'Designed a clean, mobile-friendly layout to improve accessibility for local communities.',
+    ],
+  },
+  {
+    name: 'Johor Bahru Malayalee Association Webpage',
+    technologies: ['Vue.js', 'Java', 'PHP', 'JavaScript', 'Bootstrap'],
+    highlights: [
+      'Designed and developed the official association website for JBMA community outreach.',
+      'Created event, news, and committee sections using Vue.js with a component-based architecture.',
+      'Connected PHP and Java backend modules for content management and form handling.',
+      'Delivered a professional web presence to support cultural events and member engagement.',
+    ],
+  },
+  {
+    name: 'Membership Management System',
+    technologies: ['Vue.js', 'Java', 'PHP', 'JavaScript', 'MySQL'],
+    highlights: [
+      'Developed a web-based system to manage member registration, profiles, and renewals.',
+      'Built interactive dashboards and data tables with Vue.js for administrators and staff.',
+      'Implemented secure CRUD operations through PHP and Java API integration with MySQL.',
+      'Streamlined membership tracking, reporting, and record-keeping for organizational use.',
+    ],
+  },
+  {
+    name: 'SimTrain Eco Software Testing Using Playwright',
+    technologies: ['Playwright', 'JavaScript', 'Java', 'QA Automation'],
+    highlights: [
+      'Performed automated end-to-end testing on the SimTrain Eco enterprise application.',
+      'Authored Playwright test scripts for regression, UI validation, and workflow verification.',
+      'Identified and documented defects across critical user journeys to improve release quality.',
+      'Collaborated with the development team to validate fixes and maintain test coverage.',
+    ],
+  },
 ];
 
 export const leadership = [

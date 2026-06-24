@@ -133,6 +133,12 @@ export const education = [
     location: 'Johor, Malaysia',
     period: 'Jan 2019 – June 2020',
   },
+  {
+    degree: 'Sijil Pelajaran Malaysia (SPM) — 7A, 2B',
+    institution: 'SMK Bandar Putra Kulai',
+    location: 'Kulai, Johor, Malaysia',
+    period: '2017',
+  },
 ];
 
 export const projects = [

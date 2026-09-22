@@ -315,5 +315,5 @@ export const siteMeta = {
   title: 'Deevanesh Nagarajan | Software Engineer',
   description:
     'Software Engineering graduate specializing in web development, AI solutions, QA automation, and enterprise software. Based in Kulai, Johor, Malaysia.',
-  url: 'https://deevanesh-portfolio.vercel.app',
+  url: 'https://deevan2509.github.io/Deevanesh-Portfolio',
 };

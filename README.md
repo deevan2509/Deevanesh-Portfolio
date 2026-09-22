@@ -2,7 +2,7 @@
 
 Professional portfolio website for Deevanesh Nagarajan, Software Engineering graduate based in Kulai, Johor, Malaysia.
 
-Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com), deployed on [Vercel](https://vercel.com).
+Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com), deployed on [GitHub Pages](https://deevan2509.github.io/Deevanesh-Portfolio/).
 
 ## Sections
 
@@ -30,12 +30,15 @@ npm run build
 npm run preview
 ```
 
-## Deploy to Vercel
+## Deploy to GitHub Pages
 
-1. Push this repository to GitHub
-2. Import the repo in [Vercel](https://vercel.com/new)
-3. Vercel will auto-detect Astro — no extra configuration needed
-4. Update `siteMeta.url` in `src/data/portfolio.ts` and `site` in `astro.config.mjs` with your live domain after deployment
+The site is published automatically by GitHub Actions on every push to `master`.
+
+Live URL: [https://deevan2509.github.io/Deevanesh-Portfolio/](https://deevan2509.github.io/Deevanesh-Portfolio/)
+
+1. In the repository, go to **Settings → Pages**
+2. Set the source to **GitHub Actions**
+3. Push to `master` (or run the **Deploy to GitHub Pages** workflow manually)
 
 ## Content Updates
 

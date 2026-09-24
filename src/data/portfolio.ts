@@ -40,7 +40,7 @@ export const skillGroups = [
   },
   {
     category: 'Database',
-    items: ['MySQL', 'phpMyAdmin'],
+    items: ['MySQL', 'phpMyAdmin', 'Supabase', 'Firebase'],
   },
   {
     category: 'Software Development',
@@ -60,6 +60,7 @@ export const skillGroups = [
     items: [
       'Git',
       'GitHub',
+      'Vercel',
       'Jupyter Notebook',
       'Visual Studio Code',
       'Android Studio',
@@ -148,6 +149,33 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    name: 'JBMA Pageant Voting System',
+    technologies: ['JavaScript', 'Firebase', 'Vercel'],
+    highlights: [
+      'Created a live voting platform for Johor Bahru Malayalee Association (JBMA) pageants.',
+      'Designed the system to handle more than 500 voting entries at a time during peak event traffic.',
+      'Recorded concurrent votes in Firebase and hosted the application on Vercel.',
+    ],
+  },
+  {
+    name: 'Event Ticketing System',
+    technologies: ['JavaScript', 'Supabase', 'Vercel'],
+    highlights: [
+      'Built an event management platform that generates e-tickets and automates the ticketing workflow.',
+      'Embedded a QR scanner for on-site event check-in.',
+      'Stored ticket and attendee data in Supabase and hosted the application on Vercel.',
+    ],
+  },
+  {
+    name: 'Online Lucky Draw Wheel',
+    technologies: ['JavaScript', 'Firebase', 'Vercel'],
+    highlights: [
+      'Created a custom wheel-spin lucky draw for live events.',
+      'Stored participant entries and draw results in Firebase.',
+      'Hosted the application on Vercel for event-day use.',
+    ],
+  },
   {
     name: 'Tuition Management System',
     technologies: ['PHP', 'JavaScript', 'Bootstrap', 'MySQL'],
